@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4682B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F4F4F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bankGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8FBC8F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#556B2F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="100" height="40" fill="#87CEEB"/>
+  <!-- Banks -->
+  <path d="M0 0 L100 0 L100 45 Q75 40 50 42 Q25 44 0 40 Z" fill="url(#bankGrad)"/>
+  <path d="M0 60 Q25 56 50 58 Q75 60 100 55 L100 100 L0 100 Z" fill="url(#bankGrad)"/>
+  <!-- River with depth -->
+  <path d="M0 40 Q25 38 50 42 Q75 46 100 45 L100 55 Q75 60 50 58 Q25 56 0 60 Z" fill="url(#riverGrad)"/>
+  <!-- River flow lines -->
+  <path d="M0 45 Q25 43 50 47 Q75 51 100 50" stroke="#5F9EA0" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M0 52 Q25 50 50 54 Q75 58 100 57" stroke="#4682B4" stroke-width="1" fill="none" opacity="0.4"/>
+  <!-- Water ripples and reflections -->
+  <ellipse cx="15" cy="48" rx="3" ry="1" fill="#FFFFFF" opacity="0.5"/>
+  <ellipse cx="35" cy="52" rx="2" ry="0.8" fill="#FFFFFF" opacity="0.4"/>
+  <ellipse cx="55" cy="49" rx="2.5" ry="1" fill="#FFFFFF" opacity="0.6"/>
+  <ellipse cx="75" cy="53" rx="2" ry="0.8" fill="#FFFFFF" opacity="0.5"/>
+  <ellipse cx="85" cy="50" rx="1.5" ry="0.6" fill="#FFFFFF" opacity="0.3"/>
+  <!-- Small rocks -->
+  <ellipse cx="10" cy="42" rx="2" ry="1" fill="#708090"/>
+  <ellipse cx="90" cy="57" rx="1.5" ry="0.8" fill="#708090"/>
+</svg>
